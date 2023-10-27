@@ -8,7 +8,7 @@ Output :: "One".
 If your language supports it, try using a switch statement.
 */
 
-// Solution
+// Solution 1 - switch statement
 function switchItUp(number) {
   switch (number) {
     case 0:
@@ -43,3 +43,10 @@ function switchItUp(number) {
       break;
   }
 }
+
+// Solution 2 - array
+function switchItUp(n){
+    const numWords = ["Zero","One","Two","Three","Four","Five","Six","Seven","Eight","Nine"]
+    return numWords[n]
+}
+
