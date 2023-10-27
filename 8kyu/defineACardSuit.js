@@ -9,10 +9,21 @@ Our deck (is preloaded):
 ('3♠') -> return 'spades'
 */
 
-// Solution
+// Solution 1
 function defineSuit(card) {
     return card.includes('♣') ? 'clubs' :
     card.includes('♦') ? 'diamonds' :
     card.includes('♥') ? 'hearts' :
     card.includes('♠') ? 'spades' : null
+  }
+
+  // Solution 2
+  function defineSuit(card) {
+    const suit = {
+      "♣": "clubs",
+      "♠": "spades",
+      "♦": "diamonds",
+      "♥": "hearts"
+    }
+    return suit[card.charAt(card.length - 1)]
   }
