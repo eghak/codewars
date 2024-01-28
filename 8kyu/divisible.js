@@ -15,3 +15,8 @@ function divisibleBy(numbers, divisor) {
 
   return res;
 }
+
+// Solution 2
+function divisibleBy(numbers, divisor) {
+  return numbers.filter((num) => num % divisor === 0);
+}
